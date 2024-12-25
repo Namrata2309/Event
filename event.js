@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Define Sticky Section and Cards
     const stickySection = document.querySelector("#events");
-    const stickyHeight = window.innerHeight * 5;
+    const stickyHeight = window.innerHeight * 4;
     const cards = document.querySelectorAll(".card");
     const countContainer = document.querySelector(".count-container");
     const totalCards = cards.length;
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Helper Function to Calculate Radius
     const getRadius = () => {
       return window.innerWidth < 900
-        ? window.innerWidth * 2.5
+        ? window.innerWidth * 8.5
         : window.innerWidth * 1.7
     };
   
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Position Cards Based on Scroll Progress
     function positionCards(progress = 0) {
       const radius = getRadius();
-      const totalTravel = 1 + totalCards / 8;
+      const totalTravel = 1 + totalCards / 10;
       const adjustedProgress = (progress * totalTravel - 1) * 0.75;
   
       cards.forEach((card, i) => {
