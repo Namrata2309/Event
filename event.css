@@ -13,7 +13,7 @@
     --tertiary:#f0e5dc;
 }
 .card{
-    
+    display:block;
     line-height: 40px;
     background: var(--secondary);
     text-align: center;
@@ -107,7 +107,7 @@ section{
 .card{
     position: absolute;
     width: 450px;
-    height: 700px;
+    height: 6500px;
     top: 50%;
     left: 60%;
     transform-origin: center center;
