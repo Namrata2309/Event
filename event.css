@@ -13,7 +13,7 @@
     --tertiary:#f0e5dc;
 }
 .card{
-    
+    display:block;
     line-height: 40px;
     background: var(--secondary);
     text-align: center;
