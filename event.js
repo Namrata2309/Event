@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Helper Function to Calculate Radius
     const getRadius = () => {
       return window.innerWidth < 900
-        ? window.innerWidth * 20.5
-        : window.innerWidth * 4.5;
+        ? window.innerWidth * 2.5
+        : window.innerWidth * 1.2
     };
   
     // Arc Configuration
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Position Cards Based on Scroll Progress
     function positionCards(progress = 0) {
       const radius = getRadius();
-      const totalTravel = 1 + totalCards / 7.5;
+      const totalTravel = 1 + totalCards / 8;
       const adjustedProgress = (progress * totalTravel - 1) * 0.75;
   
       cards.forEach((card, i) => {

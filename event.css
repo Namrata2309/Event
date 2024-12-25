@@ -20,20 +20,17 @@
     position: relative;
     text-decoration: none;
     color: #fff;
-    font-size: 15px;
-    font-weight: 500;
-    text-transform: uppercase;
     letter-spacing: 2px;
   }
   
-  span:before,
-  span:after{
+  .card:before,
+  .card:after{
     position: absolute;
     content: "";
     transition: all .25s;
   }
   
-  span:before{
+  .card:before{
     border-bottom: 3px solid var(--primary);
     border-left: 3px solid var(--primary);
     width: 10%;
@@ -42,7 +39,7 @@
     bottom: -10px;
   }
   
-  span:after{
+  .card:after{
     border-top: 3px solid var(--primary);
     border-right: 3px solid var(--primary);
     width: 10%;
@@ -51,12 +48,12 @@
     right: -10px;
   }
   
-  span:hover:before{
+  .card:hover:before{
     width: 105%;
     height: 105%;
   }
   
-  span:hover:after{
+  .card:hover:after{
     width: 105%;
     height: 105%;
   }
@@ -106,8 +103,8 @@ section{
 
 .card{
     position: absolute;
-    width: 450px;
-    height: 650px;
+    width: 350px;
+    height: 550px;
     top: 50%;
     left: 60%;
     transform-origin: center center;
