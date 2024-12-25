@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const getRadius = () => {
       return window.innerWidth < 900
         ? window.innerWidth * 2.5
-        : window.innerWidth * 1.2
+        : window.innerWidth * 1.7
     };
   
     // Arc Configuration
