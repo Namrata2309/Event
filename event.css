@@ -107,7 +107,7 @@ section{
 .card{
     position: absolute;
     width: 450px;
-    height: 700px;
+    height: 650px;
     top: 50%;
     left: 60%;
     transform-origin: center center;
